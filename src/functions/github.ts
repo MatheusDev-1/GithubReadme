@@ -31,9 +31,6 @@ async function github () {
   //const getUserRepositories = await api.get(`/users/${username}/repos`)
   //const userRepositories = getUserRepositories.data.map(repository => repository.html_url)
 
-  //console.log(gitCreateRemote)
-  //console.log(userRepositories.includes(repositoryURL))
-
   if( !fs.existsSync(gitDir) ) {
       await callProcess(gitInit)
       console.log('✨ Git Init ✨')  
@@ -49,7 +46,7 @@ async function github () {
     }
   })
   
-  setTimeout(() => (callProcess(gitCAP), 1000))
+  await callProcess(gitCAP)
   console.log('✨ Git Pushed ✨')
 }
 
