@@ -1,0 +1,17 @@
+{
+  "name": "githubreadme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run ts-node ./src/main/index.ts"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^3.0.1",
+    "axios": "^0.20.0",
+    "puppeteer": "^5.2.1",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.61",
+    "typescript": "^4.0.2"
+  }
+}
